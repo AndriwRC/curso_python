@@ -4,7 +4,7 @@ def run():
     #     print(letra)
     
     frase = input('Escribe una frase: ')
-    for caracter in frase[::2]:
+    for caracter in frase:
         print(caracter.upper())
 
     # for i in range(3,30,3):
