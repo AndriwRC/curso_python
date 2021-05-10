@@ -15,6 +15,5 @@ def run():
             break
         print(letra)
 
-
 if __name__ == '__main__':
     run()
