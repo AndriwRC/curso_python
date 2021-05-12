@@ -11,7 +11,9 @@ def generar_contrasena():
 
     contrasena = []
 
-    for i in range(15):
+    numero_caracteres = int(input('Ingrese el numero de caracteres que desea: '))
+
+    for i in range(numero_caracteres):
         caracter_random = random.choice(caracteres)
         contrasena.append(caracter_random)
     
