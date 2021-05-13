@@ -38,9 +38,9 @@ def run():
             puntaje_jugador2 += 1
         
     if puntaje_jugador1 > puntaje_jugador2:
-        print('El ganador definitivo es el jugador 1 con ' + puntaje_jugador1 +' puntos, Felicidades!')
+        print('El ganador definitivo es el jugador 1 con ' + str(puntaje_jugador1) +' puntos, Felicidades!')
     elif puntaje_jugador1 < puntaje_jugador2:
-        print('El ganador definitivo es el jugador 2 con ' + puntaje_jugador2 +' puntos, Felicidades!')
+        print('El ganador definitivo es el jugador 2 con ' + str(puntaje_jugador2) +' puntos, Felicidades!')
     else:
         print('Es un empate definitivo')
 
