@@ -1,6 +1,3 @@
-import math
-
-
 def volumen_figura(figura):
     if figura == 1:
         radio = float(input('Ingrese el radio de la base: '))
