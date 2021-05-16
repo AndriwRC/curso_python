@@ -15,12 +15,6 @@ def hallar_lado(base, altura, lado1):
     return(lado2)
 
 
-def area(base, altura):
-    area = (base * altura) / 2
-    area = round(area, 2)
-    return area
-
-
 def valor_positivo(numero):
     while numero <= 0:
         numero = float(input('Por favor, Ingrese un valor positivo mayor que 0: '))
@@ -31,14 +25,18 @@ def run():
     print("""
     Conozca el Area y Tipo de su triangulo
     """)
+    
     # Area de Triangulo
     base = float(input('Ingrese la base del triangulo: '))
     base = valor_positivo(base)
     altura = float(input('Ingrese la altura del triangulo: '))
     altura = valor_positivo(altura)
-    print('El area del triangulo es igual a: ' + str(area(base, altura)) + '\n')
+    area = round((base * altura / 2), 2)
+    print('El area del triangulo es igual a: ' + str(area) + '\n')
+    
     # Tipo de Triangulo
     lado1 = float(input('Ahora Ingrese la medida de un lado del triangulo: '))
+    lado1 = valor_positivo(lado1)
     lado2 = hallar_lado(base, altura, lado1)
     print('Su triangulo es de tipo: ' + tipo(base, lado1, lado2))
 
