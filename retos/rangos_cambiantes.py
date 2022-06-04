@@ -11,7 +11,7 @@ def run():
     limite_superior = int(input('Ingrese el limite superior: '))
     comparacion = int(input('Ingrese un numero para comparar: '))
 
-    while dentro_rango(limite_inferior, limite_superior, comparacion) == False:
+    while not dentro_rango(limite_inferior, limite_superior, comparacion):
         comparacion = int(input('Por favor ingrese un nuevo numero para comparar: '))
 
 
